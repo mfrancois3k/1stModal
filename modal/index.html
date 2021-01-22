@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+    <div id="myModal" class="cover">
+        <div class="content">
+            <span class="close">&times;</span>
+             <h1>Congrats 1st modal <br> <em>EVERRRR</em></h1> 
+             
+            <img src="https://media1.tenor.com/images/54d0c5a41b21173868ac0c57d9e9bbc5/tenor.gif?itemid=16784568" alt="">
+            <p>Your the Mannn!!!!, you figure out how to do a modal.<br>  <span>You my friend<strong>KICK ASS!!!!</strong></span></p>
+        </div>
+    </div>
+
+    <a id="myBtn" onclick="" href="#"> Click me</a>
+    </div>
+    <script>
+        let modal = document.getElementById("myModal");
+        let btn = document.getElementById("myBtn")
+        let span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function(){
+            modal.style.display = "block";
+        }
+
+        span.onclick = function(){
+            modal.style.display="none";
+        }
+
+        window.onclick = function(event){
+            if(event.target == modal){
+                modal.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>
